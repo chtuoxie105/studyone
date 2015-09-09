@@ -4,7 +4,6 @@ import java.util.Stack;
 
 import android.app.Activity;
 import android.app.Application;
-import android.util.Log;
 
 public class MyApplication extends Application {
 
@@ -17,9 +16,6 @@ public class MyApplication extends Application {
 		public Activity sPop(){
 			Activity acti = null;
 			for(Activity n:list){
-				
-			Log.v("и╬ЁЩ", "пео╒11111111");
-			
 			acti = list.pop();
 			}	
 			return acti;

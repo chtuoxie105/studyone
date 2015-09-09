@@ -23,6 +23,7 @@ import android.util.Log;
 public class Test extends AndroidTestCase{
 	String urlAddress = "http://192.168.1.203/json/around";
 	public void testgetHttpData(String url) {
+		
 		Executor mExcutor = new ThreadPoolExecutor(10, 100, 10, TimeUnit.SECONDS,
 				new LinkedBlockingDeque<Runnable>());
 		
@@ -35,7 +36,6 @@ public class Test extends AndroidTestCase{
 					try {
 						JSONObject jsonObkect = new JSONObject(result);
 						JSONObject json = jsonObkect.getJSONObject("merchantKey");
-						Log.i("11","¶ÔÏó>>>:"+json);
 						
 					} catch (JSONException e) {
 						e.printStackTrace();

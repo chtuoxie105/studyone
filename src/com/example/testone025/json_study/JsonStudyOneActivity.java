@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.testone001.loning.R;
+import com.google.gson.Gson;
 
 public class JsonStudyOneActivity extends Activity implements OnClickListener {
 	private Button mGetJSONBtn, mResolveJsonBtn;
@@ -57,6 +58,9 @@ public class JsonStudyOneActivity extends Activity implements OnClickListener {
 
 		mGetJSONBtn.setOnClickListener(this);
 		mResolveJsonBtn.setOnClickListener(this);
+		
+		testHson();
+		creatJson();
 	}
 	/**
 	 * 监听事件一：联网取数据采用异步处理，刷新显示，数据采用hander消息机制，主线程刷新        
@@ -136,7 +140,7 @@ public class JsonStudyOneActivity extends Activity implements OnClickListener {
 			json.put("passeord", "121314");
 			
 			Log.i("11", json.toString());
-
+			
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

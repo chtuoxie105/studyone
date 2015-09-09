@@ -1,20 +1,7 @@
 package com.example.testone026.json_study_bitmap;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.ref.WeakReference;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.concurrent.Executor;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.AsyncTask;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,14 +14,14 @@ import com.example.testone001.tooloclass001.ToolClassStorBitmap;
 public class HttpImgAdapter extends BaseAdapter {
 	private LayoutInflater inflater;
 	private String[] imgAddress;
-	private Executor mExcu;
+//	private Executor mExcu;
 	private Context mContext;
 	private ToolClassStorBitmap mToolClassStorBitmap;
 	
 	public HttpImgAdapter(Context context, Executor excus) {
 		mContext = context;
 		inflater = LayoutInflater.from(context);
-		mExcu = excus;
+//		mExcu = excus;
 		
 		mToolClassStorBitmap = ToolClassStorBitmap.getIntance();
 		mToolClassStorBitmap.startMoreThread();

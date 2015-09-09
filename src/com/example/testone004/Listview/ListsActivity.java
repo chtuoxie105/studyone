@@ -24,7 +24,6 @@ public class ListsActivity extends Activity {
 			ArrayAdapter<String> adapter = new  ArrayAdapter<String>(this,R.layout.lsit_view,s);			
 			mListview.setAdapter(adapter);
 			
-			
 			//¼àÌýListView
 			mListview.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView<?> parent, View view,

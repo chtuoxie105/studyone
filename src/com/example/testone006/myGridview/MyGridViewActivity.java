@@ -6,11 +6,13 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
+
 import com.example.testone001.loning.R;
 /**
  * GridView ¾Å¹¬¸ñµÄÁ·Ï°
@@ -20,7 +22,6 @@ public class MyGridViewActivity extends Activity {
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.grid_view_one_layout);
-			
 			mGridView = (GridView) findViewById(R.id.gridview_one);				
 			MyGridViewBase adapter = new MyGridViewBase(this,getData());		
 			mGridView.setAdapter(adapter);

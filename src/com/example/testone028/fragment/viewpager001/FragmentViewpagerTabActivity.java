@@ -133,18 +133,14 @@ public class FragmentViewpagerTabActivity extends FragmentActivity implements
 	public void hideSaveMsgFragment(FragmentTransaction transaction) {
 
 		if (ViewpagerImgFragment.newFragment() != null) {
-			Log.i("11", "隐藏第一项"+0);
 			transaction.hide(ViewpagerImgFragment.newFragment());
 			
 		}if (ViewpagerMineFragment.newFragment() != null) {
 			transaction.hide(ViewpagerMineFragment.newFragment());
-			Log.i("11", "隐藏第一项"+1);
 		}if (ViewpagerListFragment.newFragment() != null) {
 			transaction.hide(ViewpagerListFragment.newFragment());
-			Log.i("11", "隐藏第一项"+2);
 		}if (ViewpagerImgFourFragment.newFragment() != null) {
 			transaction.hide(ViewpagerImgFourFragment.newFragment());
-			Log.i("11", "隐藏第一项"+3);
 		}
 
 	}

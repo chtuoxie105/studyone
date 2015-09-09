@@ -1,6 +1,5 @@
 package com.example.testone006.myGridview;
 
-import java.util.HashMap;
 
 public class MyGridView {
 	private String mText;
